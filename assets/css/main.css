@@ -266,10 +266,87 @@ nav ul li:last-child {
 }
 
 #download {
-    padding: 80px;
+    padding: 80px 20px;
     padding-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
-
+.download-left{
+    position: relative;
+    height: 500px;
+}
+.download-left .bg {
+    background-image: url(../images/Learn/Bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    z-index: 0;
+}
+.core-interactive{
+    height: 340px;
+    width: 280px;
+    position: absolute;
+    z-index: 0;
+    bottom: 30px;
+    right: 50px;
+    background-color: #14222A;
+    border-radius: 10px;
+    box-shadow: 0 0 2.5rem #80808080;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    color: white;
+}
+.core-interactive hr{
+    height: 5px;
+    width: 90%;
+    background: #F04818;
+    border: none;
+    border-radius: 5px;
+}
+.core-interactive div{
+    text-align: center;
+    padding-top: 100px;
+}
+.core-interactive div button{
+    background: none;
+}
+.core-interactive div h5{
+    margin: 15px 0;
+}
+.download-pdf{
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem #80808080;
+    position: absolute;
+    width: 350px;
+    z-index: 4;
+    background: white;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.download-pdf button{
+    border-radius: 50%;
+    background-image: linear-gradient(to right,#F0A878,orange);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.download-pdf button img{
+    height: 20px;
+}
+.download-pdf div{
+    margin: auto;
+}
+.download-pdf div h2{
+    color: #303078;
+}
 .download-right-title {
     font-size: 25px;
     letter-spacing: 1px;
@@ -337,7 +414,7 @@ nav ul li:last-child {
     width: 150px;
     height: 50px;
     border-radius: 25px;
-    background-image: linear-gradient(to right,#FF5F35,#ED6B51);
+    background: #f06060;
     margin: 30px 0;
 }
 #card-buttons button{
@@ -399,5 +476,76 @@ nav ul li:last-child {
 }
 #press-cards .card h2{
     padding: 20px 0 10px;
-    color: #0606a5;
+    color: #303078;
+}
+footer{
+    position: relative;
+    margin-top: 100px;  
+}
+#contact-us{
+    background-image: url(../images/contact_us/Rectangle_15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+    padding-top: 80px;
+}
+#contact-us h2, #contact-us p {
+    padding-left: 25%;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+#contact-us h2{
+    font-size: 30px;
+}
+#contact-us h2 button{
+    margin-left: 10%;
+    background : #f06060;
+    height: 40px;
+    vertical-align: bottom;
+    border-radius: 25px;
+}
+#contact-us p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+#footer{
+    padding-top: 180px;
+    height: 450px;
+    background-color: #2d343b;
+    position: relative;
+    width: 100%;
+    top: 100px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 2.5fr repeat(3,1fr);
+    color: white;
+}
+#contact-info{
+    padding-left: 50px;
+    color: #b5b3b3;
+}
+#contact-info div:nth-of-type(1){
+    margin: 30px 0 50px;
+}
+#contact-info div:nth-of-type(2) p {
+    margin: 20px 0;
+}
+#contact-info p{
+    margin: 10px 0; 
+}
+#footer div:not(:nth-of-type(1)) p a{
+    color: #b5b3b3;
+}
+#footer div:not(:nth-of-type(1)) *{
+    margin: 30px 0;
+}
+#copyright{
+    grid-column: 1/5;
+    color: #b5b3b3;
+    text-align : center;
 }
