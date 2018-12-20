@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="97" height="23" viewBox="0 0 97 23">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 125px;
+      }
+
+      .cls-2 {
+        fill: #464b4f;
+        font-family: "Ubuntu-Bold";
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+  <g>
+    <text transform="translate(31 19) scale(0.16 0.17)" class="cls-1"><tspan class="cls-2">CORE</tspan></text>
+    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB8lBMVEUAAAD0biD1ciD1dR/1dx/2ex/2fh/2fx72gR73kCbzZSD0aSD7tj7+4lvzYCH/92nzWCH/9mn94VvyUiH94VrxSyL7vELxSCL4nS75qDXxQiL4mi3wPyL3iCLwPCP2fx7wOSP2fR/wNiP1ex/vMyP1eB/vMSP1dSDvLiP1ciDuLCP0byDvKyP0aSDzaiDvKiP0ZSDuKiTzXyHvKSTzWCHyXCHuKSTyUSHzVyHvKSPvLCTxSCLxSyLvKiPvLCPvLiTvMSPwMyPwNiPwOSPwPCPwPyLxQiLxRyL0bCD0biD1ciD1dR/1eB/1eh/2fR/2fB33iSP0YyD0ZSD0aCD0byD1dCD1dx/2ex72fh74mi7911TzXCHzXyHzYiD0aSD0ayD1eR/2fB72hiL6qjj+41zyVSHzWCHzWyH1ch/1dSD1eR73jCb5qTf91FLyTyLyUiLzYiH0ZiD1fh/3hyP4lSr6sTzySyLyTyH1byD1fB72fx72gx/xRSLxSSLxTCLyTiLzWSH2exz2hCDxQiLxRiLxSCLxSyLyUiHzXyD2fB/2fR3wPyP1ex/wPCPxPyPwOSP1dB/wNiPwPyLyUSHzZSD1biDvMyPvMSPvLiTwMyPwNyPwQiLvKyTvLiPvLCTvLyPvNCPyTCLuLCTxPyLwPSMAAAAZhZ5PAAAASHRSTlMANom03/Lmu5NGO7vSW3+rmMsBfrUuXcvzAzBgjbS91uPs+PXp78PbmLxAcN/+C0VzoMu+3w2lxBBh3+93A1+q0Ony7NWxbxLo0Q9aAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAXlJREFUKM9NkWVbAkEUhcfu7u7u7i5cwlhcVFAs7A5ApQywQGwwsH+od2bd1fl43uecM/dehNjn5u7h6eXt4+uH/j//AEEvJRSJJX39gUF/cvDAIC2QUkOMWDY8MhrCyaFyxdjguBI7JianpmfCwokcoZqdI0A6v8AsSpaWVyKxHLW6hsH6Bq2UUkJmcXNreyca9Bi1BgCOogVaChy7e/uxcShepzcY11QmEiWQzoNDdnCYgBKPjs2W1RNwnK4D6AWH+Ow8CSVfHOn0GJjkCgygQ2SVpKBU2yUAA5Sb5FyUyJqG0u02cJjVJIo4tNQVk4Eyr+22GwAW4y2Z445W3lPCLJT9wAPiAAAdOSjXgQGOsnBR4MhD+U7H4xOAZ53ZoOFBAUKFTgcfpfmdo6gYoZIXF+sAQL4L5aV4cWWvb4531qH/wB1z5ez+K15dXDkMeKKqrPo9TPUn2/FFVlJTyx+yrt6Fo74BNDT+P3xTc0trW3tHZ1d3Dyv8AHN7rvFF8tZBAAAAAElFTkSuQmCC" width="23" height="23"/>
+  </g>
+</svg>
