@@ -53,11 +53,14 @@ button:hover {
     padding-left: 70px;
     padding-right: 70px;
 }
+.active {
+    display: block !important;
+}
 
 header {
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 header a:hover {
@@ -85,66 +88,29 @@ nav ul li {
 nav ul li:last-child {
     padding-right: 0;
 }
-#nav-small{
-    height: 20px;
-    padding: 0;
-    width: 20px;
-    border-radius: 0;
-    background: none;
-    margin-right: 20px;
+
+.nav-menu {
     display: none;
 }
-#nav-small.active{
-    display: none;
-}
-#nav-small:hover{
-    box-shadow: none;
-}
-#nav-small img{
-    height: 20px;
-}
+
 #sidenav{
+    width: 80%;
+    height: 100%;
     display: none;
     position: fixed;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    padding-top: 67px;
+    background-color: rgba(20, 34, 42, 0.98);
+    z-index: 1;
 }
-#sidenav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+
+#sidenav ul li {
+    /* margin-bottom: 10px; */
+    background-color: rgba(20, 34, 42, 1);
+    padding: 30px;
 }
-#sidenav ul *{
-    margin: 26px 0;
-}
-#sidenav ul li:nth-of-type(1){
-    margin-top: 0;
-    margin-bottom: 26px;
-}
-#sidenav ul li{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-}
-#sidenav ul button{
-    width: 50%;
-    margin: 0;
-}
-#sidenav.active{
-    display: block;
-}
-#sidenav-hide{
-    background: transparent;
-    padding: 15px 30px;
-    font-size: 22px;
-    font-family: sans-serif;
-}
-#sidenav-hide:hover{
-    box-shadow: none;
-}
+
 #home {
     position: absolute;
     width: 100%;
@@ -541,7 +507,6 @@ nav ul li:last-child {
 }
 #press-cards .card{
     position: relative;
-    position: relative;
     height: 360px;
     box-shadow: 0 0 10px #8080809c;
     max-width: 370px;
@@ -636,6 +601,7 @@ footer{
     }
 
     .nav-menu {
+        display: block;
         float: right;
         color: #FFFFFF;
         font-size: 25px;
@@ -644,9 +610,13 @@ footer{
     }
 
     .logo {
-        position: relative;
+        position: unset;
         margin-top: 20px;
         margin-left: 30px;
+    }
+
+    #sidenav {
+        /* display: block; */
     }
     
     nav {
@@ -734,11 +704,127 @@ footer{
         text-align: center;
     }
 
-    #download, #team {
+    #download {
         display: none;
     }
 
-    #footer{
+    .download-left .core-interactive{
+        height: 275px;
+        width: 225px;
+        bottom: 115px;
+    }
+    .download-left .bg{
+        width: 425px;
+    }
+    .download-left .download-pdf{
+        height: 80px;
+        left: 40%;
+    }
+
+    #team {
+        width: 100%;
+        background-image: unset;
+        background-color: #aaa;
+        padding: 30px;
+        height: auto;
+    }
+    
+    #team-details {
+        padding-top: 50px;
+        display: block;
+        text-align: center;
+    }
+
+    #team-cards{
+        vertical-align: unset;
+        overflow-x: initial;
+        padding-top: 80px;
+        height: auto;
+        position: initial;
+        right: 50px;
+    }
+
+    #team-cards .card {
+        margin-bottom: 10px;
+    }
+
+    #press {
+        width: 100%;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .press-title {
+        margin-bottom: 30px;
+    }
+
+    #press h1 {
+        font-size: 25px;
+    }
+
+    #press p{
+        color: #000000bd;
+        font-size: 15px;
+    }
+    #press-cards{
         display: inherit;
+        justify-content: center;
+    }
+    #press-cards .card{
+        position: relative;
+        height: 360px;
+        box-shadow: 0 0 10px #8080809c;
+        max-width: 370px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    #faq {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .faq-details {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    #footer{
+        position: initial;
+        display: inherit;
+        padding: 30px;
+        height: auto;
+    }
+
+    #contact-us{
+        position: inherit;
+        background-image: unset;
+        background-color: #eee;
+        margin: 0;
+        height: auto;
+        z-index: 0;
+        padding: 30px;
+    }
+
+    #contact-us h2, #contact-us p {
+        padding-left: 0;
+        margin: 5px;
+    }
+    
+    #contact-us h2{
+        font-size: 20px;
+    }
+
+    #contact-us h2 button{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #contact-info{
+        padding-left: 0;
     }
 }
