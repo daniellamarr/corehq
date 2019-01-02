@@ -6,12 +6,16 @@
     <title>Core HQ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/themify-icons.css" />
 </head>
 <body>
     <section id="container">
         <header>
             <div class="logo">
                 <img src="assets/images/home/logo.png" alt="">
+            </div>
+            <div class="nav-menu">
+                <i class="ti-menu"></i>
             </div>
             <nav>
                 <ul>
@@ -34,31 +38,7 @@
                         <a href="" class="hover-disable"><button>Contact</button></a>
                     </li>
                 </ul>
-                <button id="nav-small"><img src="assets/images/svg/navsmall.svg" alt=""></button>
             </nav>
-            <div id="sidenav">
-                <button id="sidenav-hide">X</button>
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Sectors</a>
-                    </li>
-                    <li>
-                        <a href="">Investment Thesis</a>
-                    </li>
-                    <li>
-                        <a href="">Team</a>
-                    </li>
-                    <li>
-                        <a href="">Opportunities</a>
-                    </li>
-                    <li>
-                        <a href="" class="hover-disable"><button>Contact</button></a>
-                    </li>
-                </ul>   
-            </div>
         </header>
         <section id="home">
             <div class="home-text">
@@ -139,22 +119,7 @@
         </section>
         <section id="download">
             <div class="download-left">
-                <div class="bg"></div>
-                <div class="core-interactive">
-                    <h2>CORE INTERACTIVE</h2>
-                    <hr>
-                    <div>
-                        <button><img src="assets/images/SVG/Polygon_2.png" alt=""></button>
-                        <h5>PRESS PLAY</h2>
-                    </div>
-                </div>
-                <div class="download-pdf">
-                    <button><img src="assets/images/svg/download.svg" alt=""></button>
-                    <div>
-                        <h2>DOWNLOAD PDF</h2>
-                        <p>Funding DOOH technology</p>
-                    </div>
-                </div>
+                <img src="./assets/images/downloadPDF.png" alt="Download PDF" class="download-img">
             </div>
             <div class="download-right">
                 <div class="download-right-title">
@@ -173,12 +138,12 @@
             </div>
         </section>
         <section id="team">
-            <div id="team-details">
+            <div id="team-details" class="team-items">
                 <p>Our Team</p>
-                <h1>We<br>Are<br>hiring.</h1>
+                <h1>We<br>are<br>hiring.</h1>
                 <button>JOIN US</button>
             </div>
-            <div id="team-cards">
+            <div id="team-cards" class="team-items">
                 <div class="card">
                     <img src="assets/images/team/team1.jpg" alt="">
                     <div class="card-text">
@@ -205,23 +170,36 @@
                 <button id="card-btn-left"><img src="assets/images/icons/arrow-left.svg" alt=""></button>
                 <button id="card-btn-right"><img src="assets/images/icons/arrow-right.svg" alt=""></button>
             </div>
+            <div class="clear"></div>
         </section>
         <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div>
-                <h1>FAQs</h1>
-                <p>What is Core?</p>
-                <p>- Core is a private investment group founded in 2017 and is currently operational in 3 continents - Europe, North America & Africa</p>
-                <p>What sectors does Core focus on?</p>
-                <p>- We focus on 6 sectors- Healthcare, Hospitality, Finance, Media, Technology and Transportation. We buyout and invest capital in business and solutions within these key sectors and provide value globally.</p>
-                <p>Where is Core registered?</p>
-                <p>- We are registered as an investment group in the United Kingdom and Wales and in the State of Georgia (USA)  and in Nigeria.</p>
+            <div class="faq-title">
+                <h2>Frequently Asked Questions</h2>
             </div>
+            <center>
+                <div class="faq-details">
+                    <h1 class="big-faq">FAQs</h1>
+                    <div class="faq-details-text">
+                        <p>What is Core? </p>
+                        <p>- Core is a private investment group founded in 2017 and is currently operational in 3
+                            continents - Europe, North America & Africa </p>
+                        <p>What sectors does Core focus on?</p>
+                        <p>- We focus on 6 sectors- Healthcare, Hospitality, Finance, Media, Technology and
+                            Transportation. We buyout and invest capital in business and solutions within
+                            these key sectors and provide value globally. </p>
+                        <p>Where is Core registered? </p>
+                        <p>We are registered as an investment group in the United Kingdom and Wales and
+                            in the State of Georgia (USA)  and in Nigeria.</p>
+                    </div>
+                </div>
+            </center>
         </section>
         <section id="press">
-            <h1>From Our Press Team</h1>
-            <p>We currently have the following opportunities available.</p>
-            <p>If you're a business owner, M&A firm kindly contact us using the form below to discuss confidentially.</p>
+            <div class="press-title">
+                <h1>From Our Press Team</h1>
+                <p>We currently have the following opportunities available.</p>
+                <p>If you're a business owner, M&A firm kindly contact us using the form below to discuss confidentially.</p>
+            </div>
             <div id="press-cards">
                 <div class="card">
                     <div class="img-wrap"></div>
@@ -286,8 +264,32 @@
                 <div id="copyright">&copy; Copyright 2018 Core Global Enterprise</div>
             </div>
         </footer>
+        <div id="sidenav">
+            <!-- <button id="sidenav-hide">X</button> -->
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Sectors</a>
+                </li>
+                <li>
+                    <a href="">Investment Thesis</a>
+                </li>
+                <li>
+                    <a href="">Team</a>
+                </li>
+                <li>
+                    <a href="">Opportunities</a>
+                </li>
+                <li>
+                    <a href="" class="hover-disable"><button>Contact</button></a>
+                </li>
+            </ul>   
+        </div>
     </section>
     
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
