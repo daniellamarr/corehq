@@ -570,6 +570,7 @@ footer{
     display: grid;
     grid-template-columns: 2.5fr repeat(3,1fr);
     color: white;
+    box-sizing: border-box;
 }
 #contact-info{
     padding-left: 50px;
@@ -600,6 +601,9 @@ footer{
         margin-right: 1.5%;
         height: 350px;
     }
+    #contact-us h2, #contact-us p{
+        padding-left: 20%;
+    }
 }
 @media (max-width : 1000px){
     .x-height{
@@ -611,6 +615,12 @@ footer{
         width: 35%;
         height: 350px;
         margin-right: 5%;
+    }
+    #contact-us h2, #contact-us p{
+        padding-left: 10%;
+    }
+    #contact-us h2 button{
+        margin-left: 5%;
     }
 }
 @media (max-width: 800px){
@@ -652,8 +662,28 @@ footer{
         width: 55%;
         margin: 0 auto 5%;
     }
-
+    #contact-us h2 button{
+        margin-left: 0;
+    }
 } 
+@media (max-width : 700px){
+    #contact-us {
+        position: inherit;
+        background-image: unset;
+        background-color: #eee;
+        margin: 0;
+        height: auto;
+        z-index: 0;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    #footer{
+        top : 0;
+    }
+    #contact-us h2 button{
+        display: block;
+    }
+}
 @media (max-width : 600px){
     nav {
         display: none;
@@ -854,17 +884,6 @@ footer{
         padding: 30px;
         height: auto;
     }
-
-    #contact-us{
-        position: inherit;
-        background-image: unset;
-        background-color: #eee;
-        margin: 0;
-        height: auto;
-        z-index: 0;
-        padding: 30px;
-    }
-
     #contact-us h2, #contact-us p {
         padding-left: 0;
         margin: 5px;
@@ -873,12 +892,10 @@ footer{
     #contact-us h2{
         font-size: 20px;
     }
-
     #contact-us h2 button{
         margin-left: 0;
         margin-top: 20px;
     }
-
     #contact-info{
         padding-left: 0;
     }
