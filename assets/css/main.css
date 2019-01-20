@@ -118,6 +118,7 @@ nav ul li:last-child {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    box-sizing: border-box;
 }
 
 .home-text {
@@ -468,6 +469,7 @@ nav ul li:last-child {
 }
 #faq{
     text-align: center;
+    box-sizing: border-box;
 }
 .faq-title {
     margin-bottom: 40px;
@@ -494,6 +496,7 @@ nav ul li:last-child {
 #press{
     text-align: center;
     margin-top: 50px;
+    box-sizing: border-box;
 }
 #press h1,#press p{
     margin: 10px;
@@ -609,6 +612,9 @@ footer{
     .x-height{
         padding-top: 80%;
     }
+    .faq-details{
+        width: 55%;
+    }
 }
 @media(max-width : 950px){
     .item {
@@ -622,6 +628,7 @@ footer{
     #contact-us h2 button{
         margin-left: 5%;
     }
+    
 }
 @media (max-width: 800px){
     #home {
@@ -682,6 +689,9 @@ footer{
     }
     #contact-us h2 button{
         display: block;
+    }
+    .faq-details {
+        width: 80%;
     }
 }
 @media (max-width : 600px){
@@ -888,7 +898,6 @@ footer{
         padding-left: 0;
         margin: 5px;
     }
-    
     #contact-us h2{
         font-size: 20px;
     }
