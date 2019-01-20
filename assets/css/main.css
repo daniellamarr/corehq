@@ -184,6 +184,7 @@ nav ul li:last-child {
 #mission {
     padding: 80px;
     padding-top: 0;
+    box-sizing: border-box;
 }
 
 #mission .title {
@@ -594,9 +595,22 @@ footer{
     color: #b5b3b3;
     text-align : center;
 }
+@media (max-width : 1150px){
+    .item{
+        margin-right: 1.5%;
+        height: 350px;
+    }
+}
 @media (max-width : 1000px){
     .x-height{
         padding-top: 80%;
+    }
+}
+@media(max-width : 950px){
+    .item {
+        width: 35%;
+        height: 350px;
+        margin-right: 5%;
     }
 }
 @media (max-width: 800px){
@@ -631,236 +645,241 @@ footer{
     nav li button{
         padding: 10px 15px;
     }
+    .x-height {
+        display: none;
+    } 
+    .item {
+        width: 55%;
+        margin: 0 auto 5%;
+    }
+
 } 
-    @media (max-width : 600px){
-        nav {
-            display: none;
-            float: none;
-            margin-top: 30px;
-            margin-right: 80px;
-        }
-        #home{
-            background : none
-        }
-        header {
-            position: fixed;
-            background-color: #14222A;
-            padding-bottom: 20px;
-        }
-        .nav-menu {
-            display: block;
-            float: right;
-            color: #FFFFFF;
-            font-size: 25px;
-            margin-top: -30px;
-            margin-right: 30px;
-        }
-        .logo {
-            position: unset;
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        .videoWatch{
-            display: none
-        }
-        .x-height {
-            display: none;
-        }   
-        nav ul li {
-            display: inline;
-            font-size: 13px;
-            padding-right: 20px;
-        }
-        
-        nav ul li:last-child {
-            padding-right: 0;
-        }
-    
-        .home-text .title, .home-text p {
-            width: inherit;
-        }
-    
-        
-        .videoWatch {
-            display: none;
-            color: #fff;
-        }
-         
+@media (max-width : 600px){
+    nav {
+        display: none;
+        float: none;
+        margin-top: 30px;
+        margin-right: 80px;
     }
-    @media (max-width: 500px) {    
-        #mission {
-            width: 100%;
-            background-color: #eee;
-            padding: 30px;
-        }
-    
-        #mission .title h1 {
-            font-size: 22px;
-        }
-    
-        .item {
-            width: 300px;;
-            height: 300px;
-            padding: 30px;
-            float: none;
-            margin-bottom: 20px;
-            margin-right: 0;
-        }
-        
-        #invest {
-            width: 100%;
-            height: 400px;
-            background-image: unset;
-            background-color: #14222A;
-            padding: 30px;
-            padding-top: 50px;
-        }
-    
-        .presidentsAddress {
-            width: 95%;
-            padding: 10px;
-            margin-top: 50px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            text-align: center;
-        }
-    
-        #download {
-            padding: 30px;
-            padding-top: 150px;
-            display: block;
-        }
-    
-        .download-left {
-            height: auto;
-        }
-    
-        .download-right {
-            padding-left: 0;
-        }
-    
-        .download-img {
-            display: none;
-        }
-    
-        .download-left .core-interactive{
-            height: 275px;
-            width: 225px;
-            bottom: 115px;
-        }
-        .download-left .bg{
-            width: 425px;
-        }
-        .download-left .download-pdf{
-            height: 80px;
-            left: 40%;
-        }
-    
-        #team {
-            width: 100%;
-            background-image: unset;
-            background-color: #14222A;
-            padding: 30px;
-            height: auto;
-        }
-        
-        #team-details {
-            padding-top: 50px;
-            display: block;
-            text-align: center;
-        }
-    
-        #team-cards{
-            vertical-align: unset;
-            overflow-x: initial;
-            padding-top: 80px;
-            height: auto;
-            position: initial;
-            right: 50px;
-        }
-    
-        #team-cards .card {
-            margin-bottom: 10px;
-        }
-    
-        #press {
-            width: 100%;
-            padding: 30px;
-            margin-top: 0;
-        }
-    
-        .press-title {
-            margin-bottom: 30px;
-        }
-    
-        #press h1 {
-            font-size: 25px;
-        }
-    
-        #press p{
-            color: #000000bd;
-            font-size: 15px;
-        }
-        #press-cards{
-            display: inherit;
-            justify-content: center;
-        }
-        #press-cards .card{
-            position: relative;
-            height: 360px;
-            box-shadow: 0 0 10px #8080809c;
-            max-width: 370px;
-            width: 100%;
-            margin: 0;
-            margin-bottom: 30px;
-        }
-    
-        #faq {
-            width: 100%;
-            padding: 30px;
-        }
-    
-        .faq-details {
-            width: 100%;
-        }
-    
-        footer {
-            margin-top: 0;
-        }
-    
-        #footer{
-            position: initial;
-            display: inherit;
-            padding: 30px;
-            height: auto;
-        }
-    
-        #contact-us{
-            position: inherit;
-            background-image: unset;
-            background-color: #eee;
-            margin: 0;
-            height: auto;
-            z-index: 0;
-            padding: 30px;
-        }
-    
-        #contact-us h2, #contact-us p {
-            padding-left: 0;
-            margin: 5px;
-        }
-        
-        #contact-us h2{
-            font-size: 20px;
-        }
-    
-        #contact-us h2 button{
-            margin-left: 0;
-            margin-top: 20px;
-        }
-    
-        #contact-info{
-            padding-left: 0;
-        }
+    #home{
+        background : none
+    }
+    header {
+        position: fixed;
+        background-color: #14222A;
+        padding-bottom: 20px;
+    }
+    .nav-menu {
+        display: block;
+        float: right;
+        color: #FFFFFF;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-right: 30px;
+    }
+    .logo {
+        position: unset;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .videoWatch{
+        display: none
+    }  
+    nav ul li {
+        display: inline;
+        font-size: 13px;
+        padding-right: 20px;
     }
     
+    nav ul li:last-child {
+        padding-right: 0;
+    }
+
+    .home-text .title, .home-text p {
+        width: inherit;
+    }
+
+    
+    .videoWatch {
+        display: none;
+        color: #fff;
+    }
+    .item{
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {    
+    #mission {
+        width: 100%;
+        background-color: #eee;
+        padding: 30px;
+    }
+
+    #mission .title h1 {
+        font-size: 22px;
+    }
+
+    .item {
+        height: 300px;
+        padding: 30px;
+        float: none;
+        margin-bottom: 20px;
+        margin:0 0 20px;
+    }
+    
+    #invest {
+        width: 100%;
+        height: 400px;
+        background-image: unset;
+        background-color: #14222A;
+        padding: 30px;
+        padding-top: 50px;
+    }
+
+    .presidentsAddress {
+        width: 95%;
+        padding: 10px;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    #download {
+        padding: 30px;
+        padding-top: 150px;
+        display: block;
+    }
+
+    .download-left {
+        height: auto;
+    }
+
+    .download-right {
+        padding-left: 0;
+    }
+
+    .download-img {
+        display: none;
+    }
+
+    .download-left .core-interactive{
+        height: 275px;
+        width: 225px;
+        bottom: 115px;
+    }
+    .download-left .bg{
+        width: 425px;
+    }
+    .download-left .download-pdf{
+        height: 80px;
+        left: 40%;
+    }
+
+    #team {
+        width: 100%;
+        background-image: unset;
+        background-color: #14222A;
+        padding: 30px;
+        height: auto;
+    }
+    
+    #team-details {
+        padding-top: 50px;
+        display: block;
+        text-align: center;
+    }
+
+    #team-cards{
+        vertical-align: unset;
+        overflow-x: initial;
+        padding-top: 80px;
+        height: auto;
+        position: initial;
+        right: 50px;
+    }
+
+    #team-cards .card {
+        margin-bottom: 10px;
+    }
+
+    #press {
+        width: 100%;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .press-title {
+        margin-bottom: 30px;
+    }
+
+    #press h1 {
+        font-size: 25px;
+    }
+
+    #press p{
+        color: #000000bd;
+        font-size: 15px;
+    }
+    #press-cards{
+        display: inherit;
+        justify-content: center;
+    }
+    #press-cards .card{
+        position: relative;
+        height: 360px;
+        box-shadow: 0 0 10px #8080809c;
+        max-width: 370px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    #faq {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .faq-details {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    #footer{
+        position: initial;
+        display: inherit;
+        padding: 30px;
+        height: auto;
+    }
+
+    #contact-us{
+        position: inherit;
+        background-image: unset;
+        background-color: #eee;
+        margin: 0;
+        height: auto;
+        z-index: 0;
+        padding: 30px;
+    }
+
+    #contact-us h2, #contact-us p {
+        padding-left: 0;
+        margin: 5px;
+    }
+    
+    #contact-us h2{
+        font-size: 20px;
+    }
+
+    #contact-us h2 button{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #contact-info{
+        padding-left: 0;
+    }
+}
