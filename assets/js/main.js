@@ -13,3 +13,9 @@ window.addEventListener('resize',() => {
         $('#sidenav').removeClass('active')
     }
 })
+
+$('.scroll').click((e) => {
+    const target = e.target.dataset.target;
+    // alert();
+    window.scrollTo(0,$(`#${target}`).offset().top-10);
+})
