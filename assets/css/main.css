@@ -469,6 +469,9 @@ nav ul li:last-child {
     background: none;
     padding: 10px;
 }
+#card-btn-left img:nth-last-of-type(1){
+    display: none;
+}
 #card-buttons button:hover{
     box-shadow: none;
 }
@@ -487,7 +490,7 @@ nav ul li:last-child {
 }
 .faq-details {
     text-align: left;
-    width: 45%;
+    width: 35%;
     height: auto;
     background: #80808052;
     
@@ -781,6 +784,12 @@ footer{
         box-sizing: border-box;
         height: auto;
         padding-left: 0;
+    }
+    #card-btn-left img:nth-of-type(1){
+        display: none;
+    }
+    #card-btn-left img:nth-last-of-type(1){
+        display: inline-block;
     }
 }
 @media (max-width: 500px) {    
