@@ -410,7 +410,7 @@ nav ul li:last-child {
 
 #team-details{
     padding: 180px 50px 0;
-    width: 13%;
+    width: 20%;
     box-sizing: border-box;
 }
 
@@ -431,7 +431,8 @@ nav ul li:last-child {
     right: 50px;
     display: inline-flex;
     overflow-x: hidden;
-    width: 85%;
+    width: 79%;
+    scroll-behavior: smooth;
 }
 #team-cards .card {
     height: 300px;
@@ -515,12 +516,15 @@ nav ul li:last-child {
 #press-cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #press-cards .card{
     position: relative;
     height: 360px;
     box-shadow: 0 0 10px #8080809c;
     max-width: 370px;
+    width: 350px;
+    min-width: 300px;   
     width: 30%;
     margin: 20px;
 }
@@ -772,6 +776,7 @@ footer{
         box-sizing: border-box;
         height: auto;
         padding: 0;
+        padding-right: 20px;
     }
 }
 @media (max-width: 500px) {    

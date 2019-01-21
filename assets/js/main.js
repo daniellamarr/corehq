@@ -1,13 +1,10 @@
-// document.querySelector('#nav-small').addEventListener('click', () => {
-//     document.querySelector('#sidenav').classList.add('active')
-//     document.querySelector('#nav-small').classList.add('active')
-// })
-// document.querySelector('#sidenav-hide').addEventListener('click',() => {
-//     document.querySelector('#sidenav').classList.remove('active')
-//     document.querySelector('#nav-small').classList.remove('active') 
-// })
-
-
 $(".nav-menu").click(function(){
     $("#sidenav").toggleClass("active")
+})
+const teamCards = document.getElementById('team-cards');
+$('#card-btn-left').click(() => {
+    teamCards.scrollBy(-320,0)
+})
+$('#card-btn-right').click(() => {
+    teamCards.scrollBy(320,0)
 })
