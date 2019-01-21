@@ -8,3 +8,8 @@ $('#card-btn-left').click(() => {
 $('#card-btn-right').click(() => {
     teamCards.scrollBy(320,0)
 })
+window.addEventListener('resize',() => {
+    if(window.innerWidth > 600){
+        $('#sidenav').removeClass('active')
+    }
+})
