@@ -18,5 +18,5 @@ $('#sidenav a').click(() => {
 })
 $('.scroll').click((e) => {
     const target = e.target.dataset.target;
-    window.scrollTo(0,$(`#${target}`).offset().top-10);
+    window.scrollTo(0,$(`#${target}`).offset().top-60);
 })
