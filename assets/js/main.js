@@ -20,3 +20,17 @@ $('.scroll').click((e) => {
     const target = e.target.dataset.target;
     window.scrollTo(0,$(`#${target}`).offset().top-60);
 })
+
+$('nav a').click(function(e) {
+    e.preventDefault();
+    const target = $(this).attr('href');
+    window.scrollTo(0,$(target).offset().top-60);
+})
+
+$(window).on('scroll', () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        $('header').addClass('header-fixed');
+    }else{
+        $('header').removeClass('header-fixed');
+    }
+})
