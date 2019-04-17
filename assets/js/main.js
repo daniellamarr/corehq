@@ -28,9 +28,18 @@ $('nav a').click(function(e) {
 })
 
 $(window).on('scroll', () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         $('header').addClass('header-fixed');
     }else{
         $('header').removeClass('header-fixed');
     }
+})
+
+$()
+$(".videoWatch").click(function() {
+    $("#playVideo").css('display', 'block');
+})
+
+$("#playVideo").click(function() {
+    $(this).css('display', 'none');
 })
